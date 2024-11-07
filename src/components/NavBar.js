@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-function NavBar() {
+function NavBar({ user }) {
   return (
     <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
+      <h1>Welcome, {user.name}!</h1>
     </nav>
   );
 }
 
 export default NavBar;
+
